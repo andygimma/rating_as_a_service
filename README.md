@@ -6,11 +6,11 @@ Before RAAS (Rating as a Service) ratings for businesses were split up between w
 
 ## Set up
 
-## Up and Running
+### Up and Running
 
 Make sure you have Elixir, Phoenix, and Postgres up and running on your computer. Once you do, you can run `mix ecto.create` and `mix ecto.migrate` to get your database up and running.
 
-## Analysis tools
+### Analysis tools
 
 You can run `mix credo` for linting, and `mix sobelow` for security checks.
 
@@ -25,4 +25,8 @@ Use a tool like postmas, or one like curl in the terminal, to hit this endpoint:
 
 ## Upcoming features
 
-Soon, we will add HTTPS support, the ability to leave comments, more search features, git hooks, absinthe support.
+### Comments and Ratings
+
+* The most important part of our app is the ability to leave comments and ratings. This is where we generate our value.
+* We will add more search features, including GraphQL support.
+* We will run credo and sobelow in a git hook, to ensure we are always passing these checks.

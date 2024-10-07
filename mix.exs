@@ -47,7 +47,9 @@ defmodule RatingAsAService.MixProject do
       {:bandit, "~> 1.2"},
       {:sobelow, "~> 0.13", only: [:dev, :test], runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:httpoison, "~> 1.8"}
+      {:httpoison, "~> 1.8"},
+      {:absinthe, "~> 1.6"},
+      {:absinthe_phoenix, "~> 2.0"}
     ]
   end
 
