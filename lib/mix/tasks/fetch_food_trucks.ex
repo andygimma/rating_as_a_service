@@ -27,7 +27,6 @@ defmodule Mix.Tasks.FetchFoodTrucks do
       longitude: row["longitude"]
     ) do
       nil ->
-        IO.inspect(row, label: " INSPECT ROW")
         a = Ratings.create_food_truck(%{
           name: row["applicant"],
           address: row["address"],
@@ -35,7 +34,6 @@ defmodule Mix.Tasks.FetchFoodTrucks do
           latitude: row["latitude"],
           longitude: row["longitude"]
         })
-        IO.inspect(a, label: " INSPECT CREATED FOOD TRUCK")
       food_truck ->
         IO.puts("Skipping #{food_truck.name}")
     end
