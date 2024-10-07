@@ -50,6 +50,7 @@ defmodule RatingAsAService.Ratings do
 
   """
   def create_food_truck(attrs \\ %{}) do
+    IO.inspect("CREATE FOOD TRUCK *************")
     %FoodTruck{}
     |> FoodTruck.changeset(attrs)
     |> Repo.insert()
